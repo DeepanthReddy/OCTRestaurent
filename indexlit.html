@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Rotating Image</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJtEFZqJ-BWqCIyHRkcOhU0dnNZoAB30EAQ&usqp=CAU);
+    
+    overflow: hidden;
+  }
+  .scope {
+    position: relative;
+    margin-left: 700px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+  }
+  
+  .scope span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: lcenter;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+  }
+  .scope span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+  .scope span:hover img {
+    transform: translateY(-50px) scale(1.7);
+  }
+  @keyframes slid {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  marquee{
+        position: absolute;
+        top: 10px;
+  }
+  .music
+  {
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: auto;
+    top: 0px;
+    width:100px;
+    background:#666;
+    position:relative;
+  }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="run">
+          <marquee scrollamount="20" ><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"><img src="https://media3.giphy.com/media/L8hYufyCHFe7sOFNnn/giphy.gif?cid=6c09b952hbfz30vrwvwahq0ozbkgcok4wdbw6y538d6666cg&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" height="150px"></marquee>
+        </div>
+      </nav>
+    <div class="scope">
+        <span style="--i:1;"><img src="./litel1.jpg" alt="not found"></span>
+        <span style="--i:2;"><img src="./litel2.jpg" alt="not found"></span>
+        <span style="--i:3;"><img src="./litel3.jpg" alt="not found"></span>
+        <span style="--i:4;"><img src="./litel4.jpg" alt="not found"></span>
+        <span style="--i:5;"><img src="./litel5.jpg" alt="not found"></span>
+        <span style="--i:6;"><img src="./litel6.jpg" alt="not found"></span>
+        <span style="--i:7;"><img src="./litel7.jpg" alt="not found"></span>
+        <span style="--i:8;"><img src="./litel8.jpg" alt="not found"></span>
+
+        
+      </div>
+      
+      <div class="music">
+        
+
+            
+         
+          </audio>
+      </div>
+     
+</body>
+</html>

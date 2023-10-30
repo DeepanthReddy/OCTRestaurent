@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>GRID</title>
+        <style>
+            body{
+                background-color: rgb(140, 213, 213);
+            }
+            img{
+                position: absolute;
+                margin: 80px;
+               
+            }
+            h1{
+                position: fixed;
+                height: 50px;
+                width: 5px;
+                background-color: brown;
+                margin-top: 70px;
+                margin-left: 120px;
+                border-radius: 3px;
+                
+            }
+
+            #grad{
+                
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+                border-radius: 50%;
+                position: absolute;
+                margin-top: 40px;
+                margin-left: 98px;
+                animation-name: grad;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                
+
+            }
+            @keyframes grad{
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+   
+        </style>
+    </head>
+    <body>
+        <img src="https://pngedits.com/public/uploads/preview/bicycle-transparent-background-full-hd-download-11624929106vf9yoxwjlt.png" alt="" width="400px">
+        <h1></h1>
+        <div id="grad">
+
+        </div>
+
+    </body>
+</html>
